@@ -1,0 +1,79 @@
+C:\Users\hp>node
+Welcome to Node.js v24.13.0.
+Type ".help" for more information.
+> console.log("Hello world")
+Hello world
+undefined
+> console.log("Yug")
+Yug
+undefined
+> print("hel")
+Uncaught ReferenceError: print is not defined
+> var a = "Yug"
+undefined
+> print(a)
+Uncaught ReferenceError: print is not defined
+> console.log(a)
+Yug
+undefined
+> a = 5
+5
+> b = 8
+8
+> console.log(a+b)
+13
+undefined
+> console.log(global)
+<ref *1> Object [global] {
+  global: [Circular *1],
+  clearImmediate: [Function: clearImmediate],
+  setImmediate: [Function: setImmediate] {
+    Symbol(nodejs.util.promisify.custom): [Getter]
+  },
+  clearInterval: [Function: clearInterval],
+  clearTimeout: [Function: clearTimeout],
+  setInterval: [Function: setInterval],
+  setTimeout: [Function: setTimeout] {
+    Symbol(nodejs.util.promisify.custom): [Getter]
+  },
+  queueMicrotask: [Function: queueMicrotask],
+  structuredClone: [Function: structuredClone],
+  atob: [Function: atob],
+  btoa: [Function: btoa],
+  performance: [Getter/Setter],
+  fetch: [Function: fetch],
+  crypto: [Getter],
+  navigator: [Getter],
+  a: 5,
+  b: 8
+}
+undefined
+> console.log(globalThis)
+<ref *1> Object [global] {
+  global: [Circular *1],
+  clearImmediate: [Function: clearImmediate],
+  setImmediate: [Function: setImmediate] {
+    Symbol(nodejs.util.promisify.custom): [Getter]
+  },
+  clearInterval: [Function: clearInterval],
+  clearTimeout: [Function: clearTimeout],
+  setInterval: [Function: setInterval],
+  setTimeout: [Function: setTimeout] {
+    Symbol(nodejs.util.promisify.custom): [Getter]
+  },
+  queueMicrotask: [Function: queueMicrotask],
+  structuredClone: [Function: structuredClone],
+  atob: [Function: atob],
+  btoa: [Function: btoa],
+  performance: [Getter/Setter],
+  fetch: [Function: fetch],
+  crypto: [Getter],
+  navigator: [Getter],
+  a: 5,
+  b: 8
+}
+undefined
+> global === globalThis ? console.log("yes"):console.log("No")
+yes
+undefined
+>
