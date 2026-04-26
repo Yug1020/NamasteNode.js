@@ -16,6 +16,12 @@ const {div} = require("./modulePackage")
 
 div(a, b)
 
+const data = require("./data.json") //This is how we import json file
+
+console.log(data)
+
+const util = require("node:util") //This is node built in module
+
 // import { multiply } from "./multiple.js" 
 //Node.js does import before running any code in app.js. 
 // So it doesn't matter where do you call import
