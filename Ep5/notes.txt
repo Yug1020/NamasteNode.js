@@ -1,0 +1,14 @@
+26 April 2026
+video 5
+    your require(module) is wrapped inside IIFE 
+    IIFE concept
+    all your code will be wrapped inside IIFE and then send to V8 to execute
+    where does module and require come from ??
+    -> it is parameter of IIFE
+
+    what are the 5 step mechanism of require ?
+    -> i. identify type (user module, built-in/core module, json)
+      ii. file loading/script loading
+     iii. wrapped inside IIFE
+      iv. execute (module.exports happened here)
+       v. cashing
