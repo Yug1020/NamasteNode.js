@@ -1,0 +1,7 @@
+JS is a synchronous, single-threaded language.
+
+Node.js makes it asynchronous with the help of the libuv library, which helps to communicate our code to the OS system. It reads the files, calls APIs, makes HTTP requests, handles timer functions, etc.
+
+"Synchronous" means JS runs the code file line by line. If a single line fails, the rest of the code fails. If a single line takes more time than the rest of the code further on, then the developer has to wait for that first line to execute.
+
+With the help of Node.js, we can async and await the particular line(s) of code and execute other immediately executable code. To do so, libuv async I/O comes in a picture.
